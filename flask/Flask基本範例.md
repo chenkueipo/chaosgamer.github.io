@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return 'Hello Flask!'
+	return "Hello Flask!"
 ```
 
 <br/>
@@ -18,7 +18,7 @@ def index():
 @app.route('/hi')
 @app.route('/hello')
 def say_hello():
-	return 'Hello Flask!'
+	return "Hello Flask!"
 ```
 
 <br/>
@@ -29,7 +29,7 @@ def say_hello():
 @app.route('/greet')
 @app.route('/greet/<name>')
 def say_hello(name='Guest'):
-	return 'Hello, %s!' % name
+	return "Hello, {}!".format(name)
 ```
 
 <br/>
@@ -38,9 +38,12 @@ def say_hello(name='Guest'):
 透過重新導向的方式，讓相同的路由設定不重覆出現。  
 在本例中 url_for('greet', name='Guest') = "/greet/Guest"
 ```python
+from flask import Flask, redirect, url_for
+app = Flask(__name__)
+
 @app.route('/greet/<name>')
 def greet(name):
-    return 'Hello, %s!' % name
+    return "Hello, {}!".format(name)
 
 @app.route('/')
 def index():
