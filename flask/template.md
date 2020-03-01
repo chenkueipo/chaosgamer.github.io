@@ -69,7 +69,7 @@ def watchlist():
     return render_template('watchlist.html', user=user, movies=movies)
 ```
 
-### 網頁呈現結果2
+### 網頁呈現結果
 ![introduce01](images/introduce01.png)
  
 ---
