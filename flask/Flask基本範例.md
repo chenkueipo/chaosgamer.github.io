@@ -19,7 +19,7 @@ def say_hello():
 ```
 
 ### 從 URL 傳參數
-* 在本例中我們將 name 預設為 Guest，避免 URL 沒有帶參數的情形。
+在本例中我們將 name 預設為 Guest，避免 URL 沒有帶參數的情形。
 ```python
 @app.route('/greet')
 @app.route('/greet/<name>')
