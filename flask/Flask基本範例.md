@@ -1,7 +1,7 @@
 ## Flask基本範例
 
 ### 最小的Flask程式
-```html
+```python
 from flask import Flask
 app = Flask(__name__)
 
@@ -19,7 +19,7 @@ def index():
 ```
 
 ### 從URL傳參數
-```html
+```python
 @app.route('/greet/<name>')
 def index():
 	return '<h1>Hello, %s!</h1>' % name
