@@ -1,11 +1,11 @@
 ## Template: 套用模板
 
 ### Jinja2 模板引擎
-使用說明請參考 [Jinja Documentation](https://jinja.palletsprojects.com/)
+語法介紹請參考 [Jinja Documentation](https://jinja.palletsprojects.com/)
 
 <br/>
 
-### 範例電影清單模板: watchlist
+### 範例電影清單模板: watchlist.html
 列出 user 喜歡的 movie 清單 (包含片名及年份)
 ```html
 <!DOCTYPE html>
@@ -33,10 +33,10 @@
 </html>
 ```
 
-### 範例資料及渲染模板
+### 使用 user/movie 資料渲染 watchlist 模板
 ```python
-import os
 from flask import Flask, render_template, flash, redirect, url_for, Markup
+import os
 
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY', 'secret string')
