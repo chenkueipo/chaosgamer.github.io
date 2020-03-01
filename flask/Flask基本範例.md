@@ -42,12 +42,12 @@ from flask import Flask, redirect, url_for
 app = Flask(__name__)
 
 @app.route('/greet/<name>')
-def greet(name):
+def say_hello(name='Guest'):
     return "Hello, {}!".format(name)
 
 @app.route('/')
 def index():
-	return redirect(url_for('greet', name='Guest'))
+	return redirect(url_for('say_hello', name='Guest'))
 ```
 
 <br/><br/><br/>
