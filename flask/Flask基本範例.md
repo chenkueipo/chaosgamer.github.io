@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
 	return 'Hello Flask!'
 ```
-<br/>  
+<br/>
 ### 綁定多個 URL
 在本例中我們將 say_hello() 同時註冊兩個路由
 ```python
@@ -27,7 +27,7 @@ def say_hello():
 def say_hello(name='Guest'):
 	return 'Hello, %s!' % name
 ```
-<br><br>
+<br/><br/>
 ### redirect() + url_for() 
 透過重新導向的方式，讓相同的路由設定不重覆出現。  
 在本例中 url_for('greet', name='Guest') = "/hello/Guest"
