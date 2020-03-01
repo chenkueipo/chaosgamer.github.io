@@ -1,6 +1,6 @@
-## Flask 基本範例
+## Flask基本範例
 
-### 最小的 Flask 程序
+### 最小的Flask程式
 ```
 from flask import Flask
 app = Flask(__name__)
@@ -11,3 +11,4 @@ def index():
 ```
 
 
+[回到Blog首頁](../index.md)
