@@ -36,7 +36,7 @@ def say_hello(name='Guest'):
 
 ### redirect() + url_for() 
 透過重新導向的方式，讓相同的路由設定不重覆出現。  
-在本例中 url_for('greet', name='Guest') = "/greet/Guest"
+在本例中 url_for('say_hello', name='Guest') = "/greet/Guest"
 ```python
 from flask import Flask, redirect, url_for
 app = Flask(__name__)
