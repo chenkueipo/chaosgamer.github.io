@@ -5,9 +5,9 @@
 
 <br/>
 
-### 範例電影清單模板
+### 範例電影清單模板: watchlist
 列出 user 喜歡的 movie 清單 (包含片名及年份)
-```python
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
