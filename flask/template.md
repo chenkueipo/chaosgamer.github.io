@@ -1,4 +1,4 @@
-## Template: 套用模板
+## Template: 渲染模板
 
 ### Jinja2 模板引擎
 詳細說明請參考 [Jinja Documentation](https://jinja.palletsprojects.com/)
@@ -71,6 +71,45 @@ def watchlist():
 
 ### 網頁呈現結果
 ![introduce01](images/introduce01.png)
+
+<br/>
+
+### 基底模板: base.html
+我們可將常用的樣式定義為基底模版，讓未來的新模版可直接繼承它，有需要再進行客製化變更。  
+在基底模版內的各個分區用 block 和 endblock 標籤聲明
+```
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <title>{% block title %}Template - HelloFlask{% endblock %}</title>
+        {% block styles %}{% endblock %}
+    {% endblock %}
+</head>
+<body>
+<main>
+    {% block content %}{% endblock %}
+</main>
+<footer>
+    {% block footer %}{% endblock %}
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>
+```
+
+### 子模板繼承基底模板
+第一行使用 extends 指定要繼承的基底模板  
+接著宣告要變更的範圍，本例是要改寫基底模板的 block content 分區。
+```
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>New Content</h1>
+
+{% endblock %}
+```
 
 <br/><br/><br/>
 
