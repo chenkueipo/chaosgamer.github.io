@@ -5,6 +5,10 @@
 
 <br/>
 
+---
+
+<br/>
+
 ### 範例模板: watchlist.html
 列出 user 喜歡的 movie 清單 (包含片名及年份)
 ```
@@ -109,7 +113,7 @@ def watchlist():
 第一行使用 extends 指定要繼承的基底模板  
 接著宣告要異動的部分，如本例是要覆寫基底模板的 block content 分區內容。  
 >> ~~原內容: base.html's Content~~   
->> 新內容: base.html's Content 
+>> 新內容: child.html's Content 
 ```
 {% extends 'base.html' %}
 {% block content %}
