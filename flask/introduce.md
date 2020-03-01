@@ -5,6 +5,10 @@
 
 <br/>
 
+---
+
+<br/>
+
 ### 最小的 Flask 程式
 ```python
 from flask import Flask
@@ -14,8 +18,6 @@ app = Flask(__name__)
 def index():
 	return "Hello Flask!"
 ```
-
-<br/>
 
 ### 如何在本機執行
 加入下列段落後運行程式，使用瀏覽器開啟 [http://localhost:5000](http://localhost:5000)
