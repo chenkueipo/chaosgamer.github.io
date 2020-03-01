@@ -24,7 +24,7 @@ def login():
     session['logged_in'] = True
     return redirect(url_for('hello'))
     
-@app.route('/greet')
+@app.route('/target')
 def hello():
     return "Hello Flask!"
 ```
@@ -41,8 +41,8 @@ def logout():
         session.pop('logged_in')
     return redirect(url_for('goodbye'))
     
-@app.route('/goodbye')
-def hello():
+@app.route('/target')
+def goodbye():
     return "Goodbye Flask!"
 ```
 
