@@ -29,7 +29,7 @@ def say_hello(name='Guest'):
 ```
 
 ### redirect() + url_for() 
-透過重新導向的方式，讓相同的路由設定不重覆出現。
+透過重新導向的方式，讓相同的路由設定不重覆出現。  
 在本例中 url_for('a') = "/url_a"
 ```python
 @app.route('/url_a')
