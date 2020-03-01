@@ -5,6 +5,10 @@
 
 <br/>
 
+---
+
+<br/>
+
 ### 最小的 Flask 程式
 ```python
 from flask import Flask
@@ -14,6 +18,10 @@ app = Flask(__name__)
 def index():
 	return "Hello Flask!"
 ```
+
+<br/>
+
+---
 
 <br/>
 
