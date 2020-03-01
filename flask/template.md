@@ -5,7 +5,7 @@
 
 <br/>
 
-### 範例電影清單模板: watchlist.html
+### 範例模板: watchlist.html
 列出 user 喜歡的 movie 清單 (包含片名及年份)
 ```html
 <!DOCTYPE html>
@@ -33,18 +33,21 @@
 </html>
 ```
 
-### 使用 user/movie 資料渲染 watchlist 模板
+<br/>
+
+### 準備資料渲染模板
+自訂用戶及喜好片單資料 (user/movies)，帶入 render_template 方法渲染模板。
 ```python
 from flask import Flask, render_template, flash, redirect, url_for, Markup
 import os
 
 app = Flask(__name__)
-app.secret_key = os.getenv('SECRET_KEY', 'secret string')
+app.secret_key = os.getenv('SECRET_KEY', os.urandom(12))
 app.jinja_env.trim_blocks = True
 app.jinja_env.lstrip_blocks = True
 
 user = {
-    'username': 'Grey Li',
+    'username': 'Darren Chen',
     'bio': 'A boy who loves movies and music.',
 }
 
