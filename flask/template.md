@@ -1,7 +1,7 @@
 ## Template: 套用模板
 
 ### Jinja2 模板引擎
-語法介紹請參考 [Jinja Documentation](https://jinja.palletsprojects.com/)
+詳細說明請參考 [Jinja Documentation](https://jinja.palletsprojects.com/)
 
 <br/>
 
