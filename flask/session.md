@@ -12,11 +12,7 @@ app.config.update(dict(
 ))
 ```
 
-<br/>
-
 ---
-
-<br/>
 
 ### 模擬用戶登入
 用戶拜訪 /login 頁面後儲存登入紀錄至 session ，並轉址至歡迎頁面。
