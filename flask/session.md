@@ -14,7 +14,7 @@ app.config.update(dict(
 
 <br/>
 
-### 模擬用戶登入重新導向
+### 模擬用戶登入
 本例示範用戶從 /login 頁面拜訪，儲存紀錄至 session 後轉址至 /hello 頁面。
 ```python
 from flask import session, redirect, url_for
@@ -30,7 +30,7 @@ def hello():
 ```
 <br/>
 
-### 登出用戶
+### 模擬登出用戶
 本例示範用戶拜訪 /logout 頁面後清空 session 的登入紀錄，並轉址至 /goodbye 頁面。
 ```python
 from flask import session, redirect, url_for
