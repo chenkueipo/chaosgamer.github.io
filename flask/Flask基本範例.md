@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
 	return 'Hello Flask!'
 ```
-<br>  
+<br/>  
 ### 綁定多個 URL
 在本例中我們將 say_hello() 同時註冊兩個路由
 ```python
@@ -18,7 +18,7 @@ def index():
 def say_hello():
 	return 'Hello Flask!'
 ```
-<br>
+<br/>
 ### 從 URL 傳參數
 在本例中我們將 name 預設為 Guest，避免 URL 沒有帶參數的情形。
 ```python
@@ -40,9 +40,9 @@ def greet(name):
 def index():
 	return redirect(url_for('greet', name='Guest'))
 ```
-<br>
-<br>
-<br>
+<br/>
+<br/>
+<br/>
 [回到Blog首頁](../index.md)
-<br>
-<br>
+<br/>
+<br/>
