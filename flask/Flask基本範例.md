@@ -11,6 +11,7 @@ def index():
 ```
 
 ### 綁定多個 URL
+將 say_hello() 同時註冊兩個路由
 ```python
 @app.route('/hi')
 @app.route('/hello')
@@ -28,7 +29,7 @@ def say_hello(name='Guest'):
 ```
 
 ### redirect() + url_for() 
-利用重新導向路由的方式，讓相同的路由設定不重覆出現。
+透過重新導向的方式，讓相同的路由設定不重覆出現。
 ```python
 @app.route('/a')
 def a():
