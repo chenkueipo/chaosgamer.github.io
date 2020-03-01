@@ -13,7 +13,7 @@ def index():
 <br/>
 
 ### 綁定多個 URL
-在本例中我們將 say_hello() 同時註冊兩個路由
+在本例中我們將 say_hello() 同時註冊兩個 URL
 ```python
 @app.route('/hi')
 @app.route('/hello')
@@ -42,7 +42,7 @@ from flask import Flask, redirect, url_for
 app = Flask(__name__)
 
 @app.route('/greet/<name>')
-def say_hello(name='Guest'):
+def say_hello(name):
     return "Hello, {}!".format(name)
 
 @app.route('/')
