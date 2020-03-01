@@ -18,7 +18,7 @@ def index():
 <br/>
 
 ### 如何在本機執行
-加入下列段落後運行程式，使用瀏覽器開啟 http://localhost:5000
+加入下列段落後運行程式，使用瀏覽器開啟 [http://localhost:5000](http://localhost:5000)
 ```python
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
