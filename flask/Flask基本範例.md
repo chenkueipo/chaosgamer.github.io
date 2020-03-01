@@ -27,7 +27,7 @@ def say_hello(name='Guest'):
 	return '<h1>Hello, %s!</h1>' % name
 ```
 
-### url_for() 
+### redirect() + url_for() 
 使用它的好處是需要變更路由時可以一次性修改
 ```python
 @app.route('/a')
@@ -36,7 +36,7 @@ def a():
 
 @app.route('/b')
 def b():
-    return url_for('a')
+    return redirect(url_for('a'))
 ```
 
 
