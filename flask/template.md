@@ -36,9 +36,9 @@
 <br/>
 
 ### 準備資料渲染模板
-自訂用戶及喜好片單資料 (user/movies)，帶入 render_template 方法渲染模板。
+將用戶及喜好片單資料 (user/movies)，透過 render_template 方法渲染模板。
 ```python
-from flask import Flask, render_template, flash, redirect, url_for, Markup
+from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
