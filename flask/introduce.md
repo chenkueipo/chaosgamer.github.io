@@ -24,8 +24,6 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0')
 ```
 
-![introduce01](images/introduce01.png)
-
 <br/><br/><br/>
 
 [回到Blog首頁](../index.md)
