@@ -9,6 +9,7 @@ app = Flask(__name__)
 def index():
 	return 'Hello Flask!'
 ```
+
 <br/>
 ### 綁定多個 URL
 在本例中我們將 say_hello() 同時註冊兩個路由
