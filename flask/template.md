@@ -77,6 +77,7 @@ def watchlist():
 ### 基底模板: base.html
 我們可將常用的樣式定義為基底模板，讓未來的新模版可直接繼承，有需要再進行局部客製化變更。  
 基底模版內的各個分區用 block 和 endblock 標籤聲明範圍
+<!-- {% raw %} -->
 ```text
 <!DOCTYPE html>
 <html>
@@ -100,7 +101,7 @@ def watchlist():
 </body>
 </html>
 ```
-
+<!-- {% endraw %} -->
 ### 子模板: child.html
 第一行使用 extends 指定要繼承的基底模板  
 接著宣告要異動的部分，如本例是要覆寫基底模板的 block content 分區內容。  
