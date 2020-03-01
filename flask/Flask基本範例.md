@@ -13,7 +13,7 @@ def index():
 <br/>
 
 ### 綁定多個 URL
-在本例中我們將 say_hello() 同時註冊 '/hi' 及 '/hello' 兩個 URL
+本例將 say_hello() 同時註冊 '/hi' 及 '/hello' 兩個 URL
 ```python
 @app.route('/hi')
 @app.route('/hello')
@@ -23,8 +23,8 @@ def say_hello():
 
 <br/>
 
-### 從 URL 傳參數
-在本例中我們從 URL 傳參數 name 給 say_hello()，並將其預設為 Guest。
+### 綁定包含變數的 URL
+本例 URL 所帶的變數名稱為 name，且預設 '/greet' 為 '/greet/Guest'。
 ```python
 @app.route('/greet')
 @app.route('/greet/<name>')
