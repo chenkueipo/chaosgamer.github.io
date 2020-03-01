@@ -12,6 +12,22 @@ app.config.update(dict(
 ))
 ```
 
+<br/>
+
+### 模擬用戶登入
+```python
+from flask import Flask, session, redirect, url_for
+
+@app.route('/login')
+def login():
+    session['logged_in'] = True
+    return redirect(url_for('hello'))
+    
+@app.route('/greet')
+def hello():
+    return "Hello Flask!"
+```
+
 <br/><br/><br/>
 
 [回到Blog首頁](../index.md)
