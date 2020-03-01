@@ -75,8 +75,8 @@ def watchlist():
 <br/>
 
 ### 基底模板: base.html
-我們可將常用的樣式定義為基底模版，讓未來的新模版可直接繼承它，有需要再進行客製化變更。  
-在基底模版內的各個分區用 block 和 endblock 標籤聲明
+我們可將常用的樣式定義為基底模板，讓未來的新模版可直接繼承，有需要再進行局部客製化變更。  
+基底模版內的各個分區用 block 和 endblock 標籤聲明範圍
 ```
 <!DOCTYPE html>
 <html>
@@ -101,7 +101,7 @@ def watchlist():
 
 ### 子模板繼承基底模板
 第一行使用 extends 指定要繼承的基底模板  
-接著宣告要變更的範圍，本例是要改寫基底模板的 block content 分區。
+接著宣告要異動的部分，如本例是要改寫基底模板的 block content 分區內容。
 ```
 {% extends 'base.html' %}
 {% block content %}
