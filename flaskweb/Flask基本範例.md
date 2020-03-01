@@ -1,7 +1,7 @@
 ## Flask基本範例
 
 ### 最小的Flask程式
-```
+```flask
 from flask import Flask
 app = Flask(__name__)
 
