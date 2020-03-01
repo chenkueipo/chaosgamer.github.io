@@ -36,9 +36,9 @@ def say_hello(name='Guest'):
 
 ### redirect() + url_for() 
 透過重新導向的方式，讓相同的路由設定不重覆出現。  
-在本例中 url_for('greet', name='Guest') = "/hello/Guest"
+在本例中 url_for('greet', name='Guest') = "/greet/Guest"
 ```python
-@app.route('/hello/<name>')
+@app.route('/greet/<name>')
 def greet(name):
     return 'Hello, %s!' % name
 
