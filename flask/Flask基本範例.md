@@ -25,6 +25,6 @@ def say_hello():
 def greet(name='Guest'):
 	return '<h1>Hello, %s!</h1>' % name
 ```
-| 在本例中我們將 name 預設為 Guest，避免 URL 沒有帶參數的情形。
+> 在本例中我們將 name 預設為 Guest，避免 URL 沒有帶參數的情形。
 
 [回到Blog首頁](../index.md)
