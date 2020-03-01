@@ -23,7 +23,7 @@ def say_hello():
 ```python
 @app.route('/greet')
 @app.route('/greet/<name>')
-def greet(name='Guest'):
+def say_hello(name='Guest'):
 	return '<h1>Hello, %s!</h1>' % name
 ```
 
