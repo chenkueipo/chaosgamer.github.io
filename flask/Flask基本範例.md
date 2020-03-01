@@ -30,15 +30,15 @@ def say_hello(name='Guest'):
 
 ### redirect() + url_for() 
 透過重新導向的方式，讓相同的路由設定不重覆出現。  
-在本例中 url_for('a') = "/url_a"
+在本例中 url_for('greet', name='Guest') = "/hello/Guest"
 ```python
-@app.route('/url_a')
-def a():
-    return 'Hello Flask!'
+@app.route('/hello/<name>')
+def greet(name):
+    return 'Hello, %s!' % name
 
-@app.route('/url_b')
-def b():
-    return redirect(url_for('a'))
+@app.route('/')
+def index():
+	return redirect(url_for('greet', name='Guest'))
 ```
 
 
