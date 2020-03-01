@@ -7,7 +7,7 @@
 
 ### 範例模板: watchlist.html
 列出 user 喜歡的 movie 清單 (包含片名及年份)
-```
+```text
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +77,7 @@ def watchlist():
 ### 基底模板: base.html
 我們可將常用的樣式定義為基底模板，讓未來的新模版可直接繼承，有需要再進行局部客製化變更。  
 基底模版內的各個分區用 block 和 endblock 標籤聲明範圍
-```
+```text
 <!DOCTYPE html>
 <html>
 <head>
@@ -106,7 +106,7 @@ def watchlist():
 接著宣告要異動的部分，如本例是要覆寫基底模板的 block content 分區內容。  
 >> ~~原內容: base.html's Content~~   
 >> 新內容: child.html's Content 
-```
+```text
 {% extends 'base.html' %}
 {% block content %}
 
