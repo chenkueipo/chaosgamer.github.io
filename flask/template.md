@@ -5,6 +5,8 @@
 
 ---
 
+<br/>
+
 ### 範例模板: watchlist.html
 列出 user 喜歡的 movie 清單 (包含片名及年份)
 ```text
@@ -73,6 +75,8 @@ def watchlist():
 ![introduce01](images/introduce01.png)
  
 ---
+
+<br/>
 
 ### 基底模板: base.html
 我們可將常用樣式定義為基底模板，讓新模版可直接繼承，有需要再修改局部內容。  
