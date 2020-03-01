@@ -24,7 +24,7 @@ def say_hello():
 <br/>
 
 ### 綁定包含變數的 URL
-本例 URL 所帶的變數名稱為 name，且預設 '/greet' 為 '/greet/Guest'。
+本例 URL 所帶的變數名稱為 name，且預設為 name='Guest'。
 ```python
 @app.route('/greet')
 @app.route('/greet/<name>')
@@ -35,8 +35,8 @@ def say_hello(name='Guest'):
 <br/>
 
 ### redirect() + url_for() 
-透過重新導向的方式，讓相同的 URL 設定僅需出現一次。  
-在本例中 url_for('say_hello', name='Guest') = "/greet/Guest"
+透過重新導向的方式，讓相同的 URL 字串在專案中僅需出現一次。  
+本例中 url_for('say_hello', name='Guest') = "/greet/Guest"
 ```python
 from flask import Flask, redirect, url_for
 app = Flask(__name__)
