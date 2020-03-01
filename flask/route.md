@@ -9,8 +9,6 @@ def say_hello():
 	return "Hello Flask!"
 ```
 
-<br/>
-
 ### 綁定包含變數的 URL
 本例 URL 所帶的變數名稱為 name，且預設為 name='Guest'。
 ```python
@@ -19,8 +17,6 @@ def say_hello():
 def say_hello(name='Guest'):
 	return "Hello, {}!".format(name)
 ```
-
-<br/>
 
 ### 管理 URL 使用 redirect() + url_for() 
 透過重新導向的方式，讓相同的 URL 字串在專案中僅需出現一次。  
