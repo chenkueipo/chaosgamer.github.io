@@ -14,6 +14,10 @@ app.config.update(dict(
 
 <br/>
 
+---
+
+<br/>
+
 ### 模擬用戶登入
 用戶拜訪 /login 頁面後儲存登入紀錄至 session ，並轉址至歡迎頁面。
 ```python
@@ -25,8 +29,6 @@ def login():
     session['logged_in'] = True
     return redirect(url_for('hello'))
 ```
-
-<br/>
 
 ### 模擬登出用戶
 用戶拜訪 /logout 頁面後清空 session 的登入紀錄，並轉址至結束頁面。
