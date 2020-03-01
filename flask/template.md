@@ -72,7 +72,7 @@ def watchlist():
 ### 網頁呈現結果
 ![introduce01](images/introduce01.png)
  
----
+
 
 ### 基底模板: base.html
 我們可將常用的樣式定義為基底模板，讓未來的新模版可直接繼承，有需要再進行局部客製化變更。  
