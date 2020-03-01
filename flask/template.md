@@ -7,7 +7,7 @@
 
 ### 範例模板: watchlist.html
 列出 user 喜歡的 movie 清單 (包含片名及年份)
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
