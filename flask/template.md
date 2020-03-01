@@ -33,8 +33,6 @@
 </html>
 ```
 
-<br/>
-
 ### 主程式負責使用資料渲染模板
 將用戶及喜好片單資料 (user/movies)，透過 render_template 方法渲染模板。  
 特別注意模板文件必須放置在相對主程式的 templates/ 子目錄中
