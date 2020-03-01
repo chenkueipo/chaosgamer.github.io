@@ -28,7 +28,7 @@ def say_hello(name='Guest'):
 ```
 
 ### redirect() + url_for() 
-使用它的好處是需要變更路由時可以一次性修改
+利用重新導向路由的方式，讓相同的路由設定不重覆出現。
 ```python
 @app.route('/a')
 def a():
