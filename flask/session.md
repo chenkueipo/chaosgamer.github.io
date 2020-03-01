@@ -15,7 +15,7 @@ app.config.update(dict(
 <br/>
 
 ### 模擬用戶登入
-用戶拜訪 /login 頁面後儲存登入紀錄至 session ，並轉址至 /hello 頁面。
+用戶拜訪 /login 頁面後儲存登入紀錄至 session ，並轉址至歡迎頁面。
 ```python
 from flask import Flask, session, redirect, url_for
 app = Flask(__name__)
@@ -24,16 +24,12 @@ app = Flask(__name__)
 def login():
     session['logged_in'] = True
     return redirect(url_for('hello'))
-    
-@app.route('/target')
-def hello():
-    return "Hello Flask!"
 ```
 
 <br/>
 
 ### 模擬登出用戶
-用戶拜訪 /logout 頁面後清空 session 的登入紀錄，並轉址至 /goodbye 頁面。
+用戶拜訪 /logout 頁面後清空 session 的登入紀錄，並轉址至結束頁面。
 ```python
 from flask import Flask, session, redirect, url_for
 app = Flask(__name__)
@@ -43,10 +39,6 @@ def logout():
     if 'logged_in' in session:
         session.pop('logged_in')
     return redirect(url_for('goodbye'))
-    
-@app.route('/target')
-def goodbye():
-    return "Goodbye Flask!"
 ```
 
 <br/><br/><br/>
