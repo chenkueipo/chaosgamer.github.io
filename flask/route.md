@@ -36,6 +36,6 @@ def index():
 
 <br/><br/><br/>
 
-[回到Blog首頁](../index.md)
+[回到Flask文章列表](index.md)
 
 <br/>
