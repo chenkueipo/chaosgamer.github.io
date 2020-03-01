@@ -1,17 +1,5 @@
 ## Route: 註冊路由
 
-### 最小的 Flask 程式
-```python
-from flask import Flask
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-	return "Hello Flask!"
-```
-
-<br/>
-
 ### 綁定多個 URL
 本例將 say_hello() 同時註冊 '/hi' 及 '/hello' 兩個 URL
 ```python
