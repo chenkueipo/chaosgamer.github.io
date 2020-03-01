@@ -48,7 +48,7 @@ app.jinja_env.lstrip_blocks = True
 
 user = {
     'username': 'Darren Chen',
-    'bio': 'A boy who loves movies and music.',
+    'bio': 'A boy who loves movies and music.'
 }
 
 movies = [
@@ -61,7 +61,7 @@ movies = [
     {'name': 'The Bucket list', 'year': '2007'},
     {'name': 'Black Swan', 'year': '2010'},
     {'name': 'Gone Girl', 'year': '2014'},
-    {'name': 'CoCo', 'year': '2017'},
+    {'name': 'CoCo', 'year': '2017'}
 ]
 
 
