@@ -34,7 +34,7 @@ def say_hello(name='Guest'):
 
 <br/>
 
-### redirect() + url_for() 
+### 管理 URL 使用 redirect() + url_for() 
 透過重新導向的方式，讓相同的 URL 字串在專案中僅需出現一次。  
 本例中 url_for('say_hello', name='Guest') = "/greet/Guest"
 ```python
