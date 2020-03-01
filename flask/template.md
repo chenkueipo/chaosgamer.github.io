@@ -12,7 +12,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>**{{ user.username }}**'s Watchlist</title>
+    <title>{{ user.username }}'s Watchlist</title>
 </head>
 <body>
 <a href="{{ url_for('index') }}">&larr; Return</a>
