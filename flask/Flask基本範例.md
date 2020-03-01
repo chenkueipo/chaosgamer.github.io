@@ -7,16 +7,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return '<h1>Hello Flask!</h1>'
+	return 'Hello Flask!'
 ```
 
 ### 綁定多個 URL
-將 say_hello() 同時註冊兩個路由
+在本例中我們將 say_hello() 同時註冊兩個路由
 ```python
 @app.route('/hi')
 @app.route('/hello')
 def say_hello():
-	return '<h1>Hello Flask!</h1>'
+	return 'Hello Flask!'
 ```
 
 ### 從 URL 傳參數
@@ -25,19 +25,19 @@ def say_hello():
 @app.route('/greet')
 @app.route('/greet/<name>')
 def say_hello(name='Guest'):
-	return '<h1>Hello, %s!</h1>' % name
+	return 'Hello, %s!' % name
 ```
 
 ### redirect() + url_for() 
 透過重新導向的方式，讓相同的路由設定不重覆出現。
 ```python
-@app.route('/a')
+@app.route('/url_a')
 def a():
-    return 'a'
+    return 'Hello Flask!'
 
-@app.route('/b')
+@app.route('/url_b')
 def b():
-    return redirect(url_for('a'))
+    return redirect(url_for('url_a'))
 ```
 
 
