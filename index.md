@@ -2,7 +2,7 @@
 
 ### Flask
 
-* [最小的Flask](flask/p1.md)
-* [測試](flask/p2.md)
+* [Flask基本範例](flaskweb/Flask基本範例.md)
+* [測試](flaskweb/測試.md)
 
 
