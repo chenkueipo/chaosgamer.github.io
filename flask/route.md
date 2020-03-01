@@ -1,4 +1,4 @@
-## Flask 基本範例
+## Route: 註冊路由
 
 ### 最小的 Flask 程式
 ```python
