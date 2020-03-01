@@ -107,6 +107,7 @@ def watchlist():
 接著宣告要異動的部分，如本例是要覆寫基底模板的 block content 分區內容。  
 >> ~~原內容: base.html's Content~~   
 >> 新內容: child.html's Content 
+<!-- {% raw %} -->
 ```text
 {% extends 'base.html' %}
 {% block content %}
@@ -115,7 +116,7 @@ def watchlist():
 
 {% endblock %}
 ```
-
+<!-- {% endraw %} -->
 <br/><br/><br/>
 
 [回到Flask文章列表](index.md)
