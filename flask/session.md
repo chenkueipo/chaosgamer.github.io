@@ -1,6 +1,6 @@
 ## Session: 儲存用戶訊息
 
-### 設置密鑰
+### 1. 設置密鑰
 透過 os.urandom 函數隨機產生 12 bytes 的字串做為密鑰
 ```python
 from flask import Flask
@@ -12,11 +12,7 @@ app.config.update(dict(
 ))
 ```
 
----
-
-<br/>
-
-### 模擬用戶登入
+### 2-1. 模擬用戶登入
 用戶拜訪 /login 頁面後儲存登入紀錄至 session ，並轉址至歡迎頁面。
 ```python
 from flask import Flask, session, redirect, url_for
@@ -28,7 +24,7 @@ def login():
     return redirect(url_for('hello'))
 ```
 
-### 模擬登出用戶
+### 2-2. 模擬登出用戶
 用戶拜訪 /logout 頁面後清空 session 的登入紀錄，並轉址至結束頁面。
 ```python
 from flask import Flask, session, redirect, url_for
@@ -43,6 +39,4 @@ def logout():
 
 <br/><br/><br/>
 
-[回到Flask文章列表](index.md)
-
-<br/>
+[回到Flask文章列表](index.md)  
