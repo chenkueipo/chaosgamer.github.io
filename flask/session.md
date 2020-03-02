@@ -13,7 +13,7 @@ app.config.update(dict(
 ```
 
 ### 2-1. 模擬用戶登入
-用戶拜訪 /login 頁面後儲存登入紀錄至 session ，並轉址至歡迎頁面。
+用戶拜訪 /login 頁面後儲存登入紀錄至 session ，並重新導向至歡迎頁面。
 ```python
 from flask import Flask, session, redirect, url_for
 app = Flask(__name__)
@@ -25,7 +25,7 @@ def login():
 ```
 
 ### 2-2. 模擬登出用戶
-用戶拜訪 /logout 頁面後清空 session 的登入紀錄，並轉址至結束頁面。
+用戶拜訪 /logout 頁面後清空 session 的登入紀錄，並重新導向至結束頁面。
 ```python
 from flask import Flask, session, redirect, url_for
 app = Flask(__name__)
