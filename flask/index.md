@@ -4,9 +4,7 @@
 [2. Route: 註冊路由](route.md)  
 [3. Session: 儲存用戶訊息](session.md)  
 [4. Template: 渲染模板](template.md)
-
-<br/><br/><br/>
-
-[回到Blog首頁](../index.md)
-
-<br/>
+  
+  
+  
+[回到Blog首頁](../index.md)  
