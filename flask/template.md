@@ -3,10 +3,6 @@
 ### 1. Jinja2 模板引擎
 詳細說明請參考 [Jinja Documentation](https://jinja.palletsprojects.com/)
 
----
-
-<br/>
-
 ### 2-1. 準備範例模板: watchlist.html
 列出 user 喜歡的 movie 清單 (包含片名及年份)
 ```text
@@ -73,10 +69,6 @@ def watchlist():
 
 ### 2-3. 網頁呈現結果
 ![introduce01](images/introduce01.png)
- 
----
-
-<br/>
 
 ### 3-1. 基底模板: base.html
 我們可將常用樣式定義為基底模板，讓新模版可直接繼承，有需要再修改局部內容。  
