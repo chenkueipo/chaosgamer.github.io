@@ -22,4 +22,4 @@ if __name__ == '__main__':
 
 <br/><br/><br/>
 
-[回到Flask文章列表](index.md)  
+[[回到Flask文章列表]](index.md)  
