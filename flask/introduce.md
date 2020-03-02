@@ -3,8 +3,6 @@
 ### 1. Flask: 輕量級 Web 應用框架
 詳細說明請參考 [Flask Documentation](https://flask.palletsprojects.com/)
 
-<br/>
-
 ### 2. 最小的 Flask 程式
 ```python
 from flask import Flask
@@ -14,8 +12,6 @@ app = Flask(__name__)
 def index():
 	return "Hello Flask!"
 ```
-
-<br/>
 
 ### 3. 如何在本機執行
 加入下列段落後運行程式，使用瀏覽器開啟 [http://localhost:5000](http://localhost:5000)
