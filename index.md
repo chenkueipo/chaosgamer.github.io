@@ -1,4 +1,4 @@
-![topic](topic.jpg)
+![topic](images/topic.jpg)
 
 ## Choose Topics Here:
 
