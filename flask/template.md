@@ -1,13 +1,13 @@
 ## Template: 渲染模板
 
-### Jinja2 模板引擎
+### 1. Jinja2 模板引擎
 詳細說明請參考 [Jinja Documentation](https://jinja.palletsprojects.com/)
 
 ---
 
 <br/>
 
-### 範例模板: watchlist.html
+### 2-1. 準備範例模板: watchlist.html
 列出 user 喜歡的 movie 清單 (包含片名及年份)
 ```text
 <!DOCTYPE html>
@@ -35,7 +35,7 @@
 </html>
 ```
 
-### 主程式負責使用資料渲染模板
+### 2-2. 準備資料並渲染模板
 將用戶及喜好片單資料 (user/movies)，透過 render_template 方法渲染模板。  
 特別注意模板文件必須放置在相對主程式的 templates/ 子目錄中
 ```python
@@ -71,14 +71,14 @@ def watchlist():
     return render_template('watchlist.html', user=user, movies=movies)
 ```
 
-### 網頁呈現結果
+### 2-3. 網頁呈現結果
 ![introduce01](images/introduce01.png)
  
 ---
 
 <br/>
 
-### 基底模板: base.html
+### 3-1. 基底模板: base.html
 我們可將常用樣式定義為基底模板，讓新模版可直接繼承，有需要再修改局部內容。  
 基底模版內的各個分區用 block 和 endblock 標籤聲明範圍
 
@@ -108,7 +108,7 @@ def watchlist():
 ```
 <!-- {% endraw %} -->
 
-### 子模板: child.html
+### 3-2. 子模板: child.html
 第一行使用 extends 指定要繼承的基底模板  
 接著宣告要異動的部分，如本例是要覆寫基底模板的 block content 分區內容。  
 >> ~~原內容: base.html's Content~~   
@@ -127,6 +127,4 @@ def watchlist():
 
 <br/><br/><br/>
 
-[回到Flask文章列表](index.md)
-
-<br/>
+[回到Flask文章列表](index.md)  
