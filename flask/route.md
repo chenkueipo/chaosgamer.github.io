@@ -1,4 +1,4 @@
-## Route: 註冊路由
+## Route
 
 ### 1. 綁定多個 URL
 本例將 say_hello() 同時註冊 '/hi' 及 '/hello' 兩個 URL
