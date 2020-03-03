@@ -70,9 +70,9 @@ def watchlist():
 ### 2-3. 網頁呈現結果
 ![introduce01](images/introduce01.png)
 
-### 3-1. 基底模板: base.html
-我們可將常用樣式定義為基底模板，讓新模版可直接繼承，有需要再修改局部內容。  
-基底模版內的各個分區用 block 和 endblock 標籤聲明範圍
+### 3-1. 可重複使用的基底模板: base.html
+我們可將常用樣式定義為基底模板，讓新模版可直接繼承架構再微調細部內容。  
+基底模版內的各個分區用 block 和 endblock 成對標籤聲明範圍
 
 <!-- {% raw %} -->
 ```text
@@ -100,9 +100,9 @@ def watchlist():
 ```
 <!-- {% endraw %} -->
 
-### 3-2. 子模板: child.html
+### 3-2. 繼承基底的子模板: child.html
 第一行使用 extends 指定要繼承的基底模板  
-接著宣告要修改的 block，如本例是要覆寫基底模板的 content 內容文字。  
+接著宣告要調整的範圍，如本例將 block content 的原內容改為新內容。  
 * ~~原內容: base.html's Content~~   
 * 新內容: child.html's Content   
 
