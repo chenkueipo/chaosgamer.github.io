@@ -102,7 +102,7 @@ def watchlist():
 
 ### 3-2. 子模板: child.html
 第一行使用 extends 指定要繼承的基底模板  
-接著宣告要異動的部分，如本例是要覆寫基底模板的 block content 分區內容。  
+接著宣告要修改的 block，如本例是要覆寫基底模板的 content 內容文字。  
 * ~~原內容: base.html's Content~~   
 * 新內容: child.html's Content   
 
