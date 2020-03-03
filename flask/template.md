@@ -3,8 +3,8 @@
 ### 1. Jinja2 模板引擎
 詳細說明請參考 [Jinja Documentation](https://jinja.palletsprojects.com/)
 
-### 2-1. 準備範例模板: watchlist.html
-列出 user 喜歡的 movie 清單 (包含片名及年份)
+### 2-1. 以用戶喜好電影清單模板為範例: watchlist.html
+列出 user 喜歡的 movie 清單
 ```text
 <!DOCTYPE html>
 <html lang="en">
@@ -31,9 +31,9 @@
 </html>
 ```
 
-### 2-2. 準備資料並渲染模板
-將用戶及喜好片單資料 (user/movies)，透過 render_template 方法渲染模板。  
-特別注意模板文件必須放置在相對主程式的 templates/ 子目錄中
+### 2-2. 主程式渲染模板並傳入所需資料
+主程式透過 render_template 方法渲染模板，並傳入 user 及 movies 資料。  
+注意模板放置的檔案路徑必須在相對主程式的 templates/ 子目錄中
 ```python
 from flask import Flask, render_template
 import os
