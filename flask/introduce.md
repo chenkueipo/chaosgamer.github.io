@@ -2,6 +2,7 @@
 
 ### 1. Flask: 輕量級 Web 應用框架
 詳細說明請參考 [Flask Documentation](https://flask.palletsprojects.com/)
+首頁的圖案是角型容器不是辣椒
 
 ### 2. 最小的 Flask 程式
 ```python
